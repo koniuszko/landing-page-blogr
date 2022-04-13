@@ -5,7 +5,7 @@
     font-size: 100%;
     color: hsl(208, 49%, 24%);
     font-family: 'Ubuntu', sans-serif;
-    font-weight: 500;
+    font-weight: 400;
 }
 
 ul,
@@ -16,6 +16,10 @@ ol {
 body {
     width: 100vw;
     min-height: 100vh;
+}
+
+a {
+    text-decoration: none;
 }
 
 .hamburger {
@@ -91,18 +95,19 @@ body {
     padding: 12px 0;
     font-family: 'Overpass', sans-serif;
     font-weight: 600;
-    font-size: 22px;
-    height: 50px;
-    width: 170px;
+    font-size: 18px;
+    height: 46px;
+    width: 135px;
     border-radius: 75px;
-    border: none;
-    margin: 5px 0;
+    border: 2px solid transparent;
+    margin: 5px;
     background-color: transparent;
     cursor: pointer;
 }
 
 .gradient_red {
-    background: linear-gradient(90deg, hsl(13, 100%, 72%), hsl(353, 100%, 62%));
+    background: repeating-linear-gradient(90deg, hsl(13, 100%, 72%), hsl(353, 100%, 62%));
+    border: 0px solid transparent;
     color: #fff;
 }
 
@@ -112,6 +117,11 @@ body {
     width: 10px;
     height: 7px;
     background-image: url(/images/icon-arrow-dark.svg);
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.pointer {
     cursor: pointer;
 }
 
@@ -148,7 +158,7 @@ header {
 }
 
 .main_menu {
-    position: fixed;
+    position: absolute;
     top: 15vh;
     left: 5vw;
     width: 90vw;
@@ -160,16 +170,21 @@ header {
 }
 
 .show {
-    animation: 300ms openMenu;
+    animation: 300ms openMenu linear;
     height: auto;
 }
 
 .banner {
-    padding: 20vh 10vw;
+    padding: 15vh 10vw;
+    text-align: center;
 }
 
 .secMenu_containter {
     margin: 30px 0;
+}
+
+.secMenu_containter li {
+    padding: 10px 0;
 }
 
 .buttons_container {
@@ -185,12 +200,55 @@ header {
     background-color: #EFEFF1;
     border-radius: 5px;
     width: 80%;
+    display: none;
+}
+
+.menu_open {
+    display: block;
 }
 
 .secondary_menu li {
     margin: 10px 0;
 }
 
+.rotate {
+    transform: rotate(180deg);
+}
+
+.line {
+    display: block;
+    margin: -10px auto;
+    width: calc(100% - 40px);
+    height: 2px;
+    background-color: #EFEFF1;
+}
+
+
+.white_text {
+    color: #fff;
+}
+
+h1 {
+    font-size: 32px;
+    line-height: 48px;
+    text-align: center;
+}
+
+.banner p {
+    margin: 15px 0 40px;
+    text-align: center;
+    font-weight: 400;
+}
+
+.white_bg {
+    background-color: #fff;
+    color: hsl(353, 100%, 62%);
+}
+
+.border {
+    border: 2px solid #fff;
+    color: #fff;
+}
 
 @keyframes openMenu {
     0% {
@@ -199,11 +257,11 @@ header {
     }
 
     50% {
-        height: 100px;
+        height: 170px;
     }
 
     100% {
-        height: auto;
+        height: 340.35px;
 
     }
 }
