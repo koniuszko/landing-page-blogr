@@ -254,10 +254,33 @@ h1 {
 }
 
 main {
-    margin: 100px 10vw;
+    margin: 100px 0;
 }
 
-h2 {}
+h3 {
+    font-size: 26px;
+    font-weight: 400;
+    text-align: center;
+    margin: 40px 15vw;
+}
+
+.img_editor {
+    background-image: url(/images/illustration-editor-mobile.svg);
+    background-repeat: no-repeat;
+    background-size: 100vw;
+    width: 100%;
+    min-height: 81.5vw;
+}
+
+p {
+    padding: 0 10vw;
+    font-size: 18px;
+    line-height: 28px;
+    font-family: 'Overpass', sans-serif;
+    text-align: center;
+    font-weight: 300;
+    color: hsl(240, 2%, 57%);
+}
 
 @keyframes openMenu {
     0% {
