@@ -127,7 +127,7 @@ a {
 
 header {
     background: linear-gradient(180deg, hsl(13, 100%, 72%), hsl(353, 100%, 62%));
-    border-bottom-left-radius: 100px;
+    border-bottom-left-radius: 25vw;
     overflow: hidden;
 }
 
@@ -258,10 +258,10 @@ main {
 }
 
 h3 {
-    font-size: 26px;
+    font-size: 28px;
     font-weight: 400;
     text-align: center;
-    margin: 40px 15vw;
+    margin: 40px 12vw;
 }
 
 .img_editor {
@@ -280,6 +280,101 @@ p {
     text-align: center;
     font-weight: 300;
     color: hsl(240, 2%, 57%);
+}
+
+.editor_sec {
+    margin-bottom: 90vw;
+}
+
+.phones_sec {
+    position: relative;
+    background: linear-gradient(90deg, hsl(237, 17%, 21%), hsl(237, 23%, 32%));
+    border-top-right-radius: 25vw;
+    border-bottom-left-radius: 25vw;
+    z-index: -2;
+    padding-bottom: 100px;
+}
+
+.phones_containter {
+    position: relative;
+    overflow: hidden;
+    border-top-right-radius: 25vw;
+    border-bottom-left-radius: 25vw;
+}
+
+.img_phones {
+    position: absolute;
+    top: -50vw;
+    background-image: url(images/illustration-phones.svg);
+    background-repeat: no-repeat;
+    background-size: 100vw;
+    width: 100vw;
+    height: 105vw;
+    z-index: 1;
+}
+
+.bg_circles {
+    position: absolute;
+    top: 5%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-image: url(/images/bg-pattern-circles.svg);
+    background-repeat: no-repeat;
+    background-size: 165vw;
+    width: 165vw;
+    height: 170vw;
+    z-index: -1;
+}
+
+
+h2 {
+    font-size: 36px;
+    font-weight: 600;
+    text-align: center;
+    padding-top: 60vw;
+    margin-bottom: 30px;
+    color: #fff;
+}
+
+.laptop_sec {
+    margin-top: 60px;
+}
+
+.img_laptop {
+    background-image: url(/images/illustration-laptop-mobile.svg);
+    background-repeat: no-repeat;
+    background-size: 130vw;
+    background-position: -15vw 0;
+    width: 130vw;
+    height: calc(1.3 * 72vw);
+}
+
+footer {
+    background-color: hsl(240, 10%, 16%);
+    border-top-right-radius: 25vw;
+    text-align: center;
+    padding: 50px;
+
+}
+
+footer .logo {
+    margin: 0 auto 50px;
+}
+
+footer a {
+    color: #fff;
+    font-weight: 300;
+    font-family: 'Overpass', sans-serif;
+    font-size: 16px;
+    line-height: 32px;
+}
+
+h4 {
+    color: #fff;
+    font-size: 24px;
+    font-weight: 600;
+    margin: 20px 0;
+    font-family: 'Overpass', sans-serif;
 }
 
 @keyframes openMenu {
