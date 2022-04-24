@@ -15,12 +15,12 @@ ol {
 
 body {
     width: 100vw;
-    min-height: 100vh;
 }
 
 a {
     text-decoration: none;
 }
+
 
 .hamburger {
     margin: 0;
@@ -274,7 +274,7 @@ h3 {
 
 p {
     padding: 0 10vw;
-    font-size: 18px;
+    font-size: 16px;
     line-height: 28px;
     font-family: 'Overpass', sans-serif;
     text-align: center;
@@ -283,7 +283,7 @@ p {
 }
 
 .editor_sec {
-    margin-bottom: 90vw;
+    margin-bottom: 70vw;
 }
 
 .phones_sec {
@@ -333,7 +333,7 @@ h2 {
     text-align: center;
     padding-top: 60vw;
     margin-bottom: 30px;
-    color: #fff;
+
 }
 
 .laptop_sec {
@@ -375,6 +375,311 @@ h4 {
     font-weight: 600;
     margin: 20px 0;
     font-family: 'Overpass', sans-serif;
+}
+
+@media(min-width:480px) {}
+
+@media(min-width:1440px) {
+    body {
+        margin: 0 auto;
+        width: 1440px;
+    }
+
+    .hamburger {
+        display: none;
+    }
+
+    header .logo {
+        margin-top: 15px;
+    }
+
+    .gradient_red {
+        background: unset;
+        background-color: #fff;
+        border: 0px solid transparent;
+        color: hsl(353, 100%, 62%);
+    }
+
+    .gradient_red:hover {
+        background-color: hsl(13, 100%, 72%);
+        color: #fff;
+    }
+
+    .login_btn {
+        color: #fff;
+    }
+
+    .arrow {
+        background-image: url(/images/icon-arrow-light.svg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 15px;
+        height: 10px;
+    }
+
+    .pointer {
+        cursor: pointer;
+    }
+
+    header {
+        background: linear-gradient(90deg, hsl(13, 100%, 72%), hsl(353, 100%, 62%));
+        border-bottom-left-radius: 100px;
+    }
+
+    .header_bg {
+        background-image: url(/images/bg-pattern-intro-desktop.svg);
+        background-repeat: no-repeat;
+        background-size: 200%;
+        background-position: 30% 50%;
+    }
+
+
+    .top_bar {
+        padding-top: 30px;
+        display: flex;
+        justify-content: unset;
+    }
+
+    .menu {
+        width: calc(1440px - 200px - 40px);
+    }
+
+
+    .main_menu {
+        position: unset;
+        width: unset;
+        height: unset;
+        background-color: unset;
+        overflow: unset;
+        text-align: center;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+
+    .banner {
+        padding: 100px 0;
+    }
+
+    .secMenu_containter {
+        position: relative;
+        margin: 0 0 0 30px;
+        display: flex;
+        flex-direction: row;
+        justify-items: space-evenly;
+    }
+
+    .secMenu_containter li {
+        padding: 30px 0 0 70px;
+    }
+
+    .secMenu_containter li span {
+        color: #fff;
+    }
+
+    .active {
+        border-bottom: solid 2px #fff;
+    }
+
+    .buttons_container {
+        margin: 0 30px;
+        display: flex;
+        flex-direction: row;
+        align-items: unset;
+    }
+
+    .secondary_menu {
+        position: absolute;
+        z-index: 2;
+        margin: 10px auto;
+        padding: 15px 10px;
+        background-color: #EFEFF1;
+        border-radius: 5px;
+        width: 140px;
+        display: none;
+    }
+
+    .secondary_menu li {
+        margin: 10px 0;
+        padding: 0;
+        text-align: left;
+    }
+
+    .secondary_menu li a:hover {
+        font-weight: 700;
+    }
+
+    .menu_open {
+        display: block;
+    }
+
+
+    .line {
+        display: none;
+    }
+
+    h1 {
+        font-size: 46px;
+    }
+
+    .banner p {
+        font-size: 18px;
+    }
+
+    .white_bg:hover {
+        background-color: hsl(13, 100%, 72%);
+        color: #fff;
+    }
+
+
+    .border:hover {
+        border: 2px solid #fff;
+        color: hsl(13, 100%, 72%);
+        background-color: #fff;
+    }
+
+    main {
+        margin: 120px 0;
+    }
+
+    h3 {
+        margin: unset;
+        text-align: left;
+        font-size: 28px;
+    }
+
+    .editor_sec {
+        margin-top: 150px;
+        margin-bottom: 100px;
+    }
+
+    .art_containter_reverse {
+        position: relative;
+    }
+
+    .articles {
+        align-self: flex-start;
+        padding: 80px 190px;
+        width: 60%;
+    }
+
+    .img_editor {
+        position: absolute;
+        top: -180px;
+        left: 50%;
+        background-image: url(/images/illustration-editor-desktop.svg);
+        background-repeat: no-repeat;
+        background-position: -25% 0;
+        background-size: 925px;
+        width: 50%;
+        min-height: 882px;
+    }
+
+
+    p {
+        padding: 20px 0 40px;
+        text-align: left;
+    }
+
+
+    .phones_sec {
+        position: relative;
+        border-top-right-radius: 100px;
+        border-bottom-left-radius: 100px;
+        z-index: -2;
+        padding: 0;
+    }
+
+    .phones_containter {
+        position: relative;
+        overflow: hidden;
+        border-top-right-radius: 100px;
+        border-bottom-left-radius: 100px;
+    }
+
+    .phones_text_container {
+        margin: 100px 180px 100px 750px;
+    }
+
+    .img_phones {
+        top: -10%;
+        left: 10%;
+        background-size: cover;
+        width: 552px;
+        height: 579px;
+        z-index: 1;
+    }
+
+    .bg_circles {
+        position: absolute;
+        top: 5%;
+        left: 507px;
+        transform: translate(-75%, -50%);
+        background-size: cover;
+        width: 1014px;
+        height: 1018px;
+        z-index: -1;
+    }
+
+
+    h2 {
+        font-size: 34px;
+        font-weight: 600;
+        text-align: center;
+        padding-top: unset;
+        margin-bottom: 30px;
+
+    }
+
+    .laptop_sec {
+        margin-top: 100px;
+        overflow: hidden;
+        min-height: 786px;
+    }
+
+    .art_containter {
+        position: relative;
+    }
+
+    .img_laptop {
+        position: absolute;
+        top: 0;
+        left: -19%;
+        background-image: url(/images/illustration-laptop-desktop.svg);
+        background-size: 100%;
+        background-position: unset;
+        width: 974px;
+        height: 786px;
+    }
+
+    .laptop_art {
+        position: absolute;
+        top: 130px;
+        left: 40%;
+        transform: translate(-50% -50%);
+    }
+
+
+    footer {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        background-color: hsl(240, 10%, 16%);
+        border-top-right-radius: 100px;
+        text-align: left;
+        padding: 50px;
+
+    }
+
+    footer .logo {
+        margin: 20px 0 0 -150px;
+    }
+
+    footer a:hover {
+        text-decoration: underline;
+    }
+
 }
 
 @keyframes openMenu {

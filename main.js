@@ -20,15 +20,43 @@ menu.addEventListener('click', () => {
 
 open_product.addEventListener('click', () => {
     product_menu.classList.toggle('menu_open');
-    product_arrow.classList.toggle('rotate')
+    product_arrow.classList.toggle('rotate');
+    open_product.classList.toggle('active')
+
+    company_menu.classList.remove('menu_open');
+    company_arrow.classList.remove('rotate');
+    open_company.classList.remove('active')
+
+    connect_menu.classList.remove('menu_open');
+    connect_arrow.classList.remove('rotate');
+    open_connect.classList.remove('active')
 })
 
 open_company.addEventListener('click', () => {
     company_menu.classList.toggle('menu_open');
-    company_arrow.classList.toggle('rotate')
+    company_arrow.classList.toggle('rotate');
+    open_company.classList.toggle('active')
+
+    product_menu.classList.remove('menu_open');
+    product_arrow.classList.remove('rotate');
+    open_product.classList.remove('active')
+
+    connect_menu.classList.remove('menu_open');
+    connect_arrow.classList.remove('rotate');
+    open_connect.classList.remove('active')
+
 })
 
 open_connect.addEventListener('click', () => {
     connect_menu.classList.toggle('menu_open');
-    connect_arrow.classList.toggle('rotate')
+    connect_arrow.classList.toggle('rotate');
+    open_connect.classList.toggle('active')
+
+    product_menu.classList.remove('menu_open');
+    product_arrow.classList.remove('rotate');
+    open_product.classList.remove('active')
+
+    company_menu.classList.remove('menu_open');
+    company_arrow.classList.remove('rotate');
+    open_company.classList.remove('active')
 })
